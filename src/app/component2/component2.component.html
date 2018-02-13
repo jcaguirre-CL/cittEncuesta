@@ -1,0 +1,30 @@
+<div class="main-content" align="center" style="margin-right: auto; margin-left: auto; width: 40%;">
+  <div class="card">
+      <div class="card-header" data-background-color="orange" style="height: auto;text-align:center;font-family: 'Changa One', cursive;font-size: 68px;">
+        <p>{{title}}</p>
+        <br>
+        <p class="category" style="text-align:center;font-size: 28px;">Selecciona la persona que te atendio</p>
+      </div>
+     <div class="row">
+      <div class="col-md-12">
+        <div class="card-content">
+          <div class="row" style="margin-top: 15%; margin-bottom: 15%">
+            <div class="col-md-4">
+              <img width="10%" src="../../assets/images/emoji-sunglasses.png" (click)="click1()" [ngStyle]="{'opacity': opacity1, 'height': 5}">
+            </div>
+            <div class="col-md-4">
+              <img width="10%" src="../../assets/images/emoji-pensativo.png" (click)="click2()" [ngStyle]="{'opacity': opacity2}">
+            </div>
+            <div class="col-md-4">
+              <img width="10%" src="../../assets/images/emoji-lengua.png" (click)="click3()" [ngStyle]="{'opacity': opacity3}">
+            </div>
+          </div>
+          <div class="button-row" style="margin-top: 25%; margin-bottom: 5%">
+            <button mat-raised-button color="primary" (click)="avanzar()" routerLink="/component3">Continuar</button>
+          </div>
+          <mat-hint align="end">1 / 4</mat-hint>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

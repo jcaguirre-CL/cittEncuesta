@@ -1,0 +1,22 @@
+<div class="main-content" align="center" style="margin-right: auto; margin-left: auto; width: 40%;">
+  <div class="card">
+      <div class="card-header" data-background-color="orange" style="height: auto;text-align:center;font-family: 'Changa One', cursive;font-size: 68px;">
+        <p>{{title}}</p>
+        <br>
+        <p class="category" style="text-align:center;font-size: 28px;">Déjanos un comentario</p>
+      </div>
+      <div class="row">
+        <div class="example-container">
+          <mat-form-field>
+            <textarea width="100" align="middle" matInput placeholder="Comentario" [(ngModel)]="comentario" matTextareaAutosize matAutosizeMinRows="2" matAutosizeMaxRows="10"></textarea>
+          </mat-form-field>
+          <div class="button-row" style="margin-top: 25%; margin-bottom: 5%">
+            <button mat-raised-button color="primary" (click)="avanzar()" routerLink="/component5">Continuar</button>
+          </div>
+          <mat-hint align="end">3 / 4</mat-hint>
+        </div>
+      </div>
+  </div>
+</div>
+
+

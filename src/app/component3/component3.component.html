@@ -1,0 +1,30 @@
+<div class="main-content" align="center" style="margin-right: auto; margin-left: auto; width: 40%;">
+  <div class="card">
+    <div class="card-header" data-background-color="orange" style="height: auto;text-align:center;font-family: 'Changa One', cursive;font-size: 68px;">
+      <p>{{title}}</p>
+      <br>
+      <p class="category" style="text-align:center;font-size: 28px;">Qué te pareció la atención?</p>
+    </div>
+    <div class="row" style="margin-top: 15%; margin-bottom: 15%">
+      <div class="col-md-12">
+        <div class="card-content">
+            <div class="col-md-2">
+              <img width="2%" src="../../assets/images/disaproval.png">
+            </div>
+              <div class="col-md-8">
+                  <mat-slider matInput [(ngModel)]="value" disabled="false" invert="false" max="5" min="1" step="1" thumb-label="false" tick-interval="1"
+                    value="5" vertical="false" style="margin-right: auto; margin-left: auto; width: 80%;">
+                  </mat-slider>
+              </div>
+            <div class="col-md-2">
+              <img width="2%" src="../../assets/images/hand.png">
+            </div>
+          <div class="button-row" style="margin-top: 25%; margin-bottom: 5%">
+            <button mat-raised-button color="primary" (click)="avanzar()" routerLink="/component4">Continuar</button>
+          </div>
+          <mat-hint align="end">2 / 4</mat-hint>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

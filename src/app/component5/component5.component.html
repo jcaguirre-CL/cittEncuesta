@@ -1,0 +1,31 @@
+<div class="main-content" align="center" style="margin-right: auto; margin-left: auto; width: 40%;">
+  <div class="card">
+      <div class="card-header" data-background-color="orange" style="height: auto;text-align:center;font-family: 'Changa One', cursive;font-size: 68px;">
+        <p>{{title}}</p>
+        <br>
+        <p class="category" style="text-align:center;font-size: 28px;">Déjanos tu correo</p>
+      </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card-content">
+          <div class="row" style="margin-top: 15%; margin-bottom: 15%">
+            <form class="example-form">
+                <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Email" [formControl]="emailFormControl" [(ngModel)]="correo">
+                    <mat-error *ngIf="emailFormControl.hasError('pattern')">
+                    Tienes que ingresar una direccion de correo valida
+                    </mat-error>
+                    <mat-error *ngIf="emailFormControl.hasError('required')">
+                    Es necesario que <strong>ingreses</strong> tu correo
+                    </mat-error>
+                </mat-form-field>
+                <div class="button-row"  style="margin-top: 15%; margin-bottom: 5%">
+                    <button mat-raised-button color="primary" (click)="avanzar()" routerLink="/component1">Enviar</button>
+                </div>
+                <mat-hint align="end">4 / 4</mat-hint>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
